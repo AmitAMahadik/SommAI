@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ChatView: View {
     @StateObject private var vm = ChatViewModel()
@@ -40,6 +41,13 @@ struct ChatView: View {
                         withAnimation { proxy.scrollTo(last, anchor: .bottom) }
                     }
                 }
+                .onChange(of: vm.isLoading) { oldValue, newValue in
+                    // Trigger success haptic when loading finishes without an error
+                    if oldValue == true, newValue == false, vm.errorMessage == nil {
+                        let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.success)
+                    }
+                }
             }
 
             if let err = vm.errorMessage {
@@ -72,7 +80,7 @@ struct ChatView: View {
             }
             .padding()
         }
-        .navigationTitle("SommAI")
+        .navigationTitle("🍷 SommAI")
     }
 }
 
