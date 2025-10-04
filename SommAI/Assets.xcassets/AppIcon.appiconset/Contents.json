@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "SommAI.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -12,6 +13,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "SommAIDark.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -23,6 +25,7 @@
           "value" : "tinted"
         }
       ],
+      "filename" : "SommAITinted.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

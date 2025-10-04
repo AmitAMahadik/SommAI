@@ -11,7 +11,9 @@ import SwiftUI
 struct SommAIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ChatView()
+            }
         }
     }
 }
