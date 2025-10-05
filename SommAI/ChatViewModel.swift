@@ -20,7 +20,7 @@ final class ChatViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     // CHANGE THIS to your API (use http://127.0.0.1:8000 for Simulator)
-    private let baseURL = URL(string: "http://127.0.0.1:8000")!
+    private let baseURL = URL(string: "https://demo-container.jollybay-d8b41412.westus.azurecontainerapps.io")!
 
     func send(_ prompt: String, sessionID: String? = nil) {
         let trimmed = prompt.trimmingCharacters(in: .whitespacesAndNewlines)
