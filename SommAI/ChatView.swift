@@ -81,6 +81,9 @@ struct ChatView: View {
             .padding()
         }
         .navigationTitle("🍷 SommAI")
+        .onReceive(NotificationCenter.default.publisher(for: .triggerWinePairingNow)) { _ in
+            vm.send("Wine Now!") // empty prompt triggers time-aware wine pairing query
+        }
     }
 }
 
