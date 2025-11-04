@@ -10,9 +10,22 @@
 		BC162DAD2E918AE000D94293 /* SommAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SommAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC0922232E937F9800EA315C /* Exceptions for "SommAI" folder in "SommAI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BC162DAC2E918AE000D94293 /* SommAI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BC162DAF2E918AE000D94293 /* SommAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC0922232E937F9800EA315C /* Exceptions for "SommAI" folder in "SommAI" target */,
+			);
 			path = SommAI;
 			sourceTree = "<group>";
 		};
@@ -256,6 +269,9 @@
 				DEVELOPMENT_TEAM = VHYDM4DE58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SommAI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "NSMicrophoneUsageDescription\n";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "NSSpeechRecognitionUsageDescription\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +304,9 @@
 				DEVELOPMENT_TEAM = VHYDM4DE58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SommAI/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "NSMicrophoneUsageDescription\n";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "NSSpeechRecognitionUsageDescription\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
